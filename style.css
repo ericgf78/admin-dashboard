@@ -38,7 +38,7 @@ span {
 .section1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 70px);
+    grid-template-rows: repeat(6, 70px);
 }
 .section2 {
     display: grid;
@@ -48,11 +48,14 @@ span {
 
 h1, h2 {
     color: white;
+    cursor: pointer;
     
 }
 
 h4 {
     color: rgb(36, 36, 36);
+    cursor: pointer;
+
 }
 
 #username {
@@ -61,7 +64,7 @@ h4 {
 
 #column2 {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.1fr 1fr;
 }
 
 #header {
@@ -72,7 +75,7 @@ h4 {
 
 #header1 {
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 1fr 0.1fr 0.2fr;
     justify-items: center;
     align-items: center;
 }
@@ -80,6 +83,7 @@ h4 {
 #header1-username {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-self: start;
 }
 
 #header2 {
@@ -91,10 +95,13 @@ img {
     justify-self: center;
     align-self: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-#header2-section1{
-    align-items: center;
+#header2-section1 {
+    display: grid;
+    justify-content: start;
+    align-content: center;
 }
 
 #header2-section2{
@@ -113,6 +120,7 @@ button {
     height: 2.5rem;
     font-size: medium;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #site-search {
@@ -148,12 +156,12 @@ button {
 
 #cards {
     display: grid;
-    grid-column: 1/2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr 3fr 3fr;
     gap: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    
     
 }
 
@@ -165,6 +173,8 @@ button {
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
+
 
 #content-text-2 {
     display: inline-grid;
@@ -194,4 +204,48 @@ button {
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-left: 6px solid var(--accent-color);
+    padding: 1rem;
+    display: grid;
+    
+}
+
+
+.card-icons {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.1fr;
+    justify-items: end;
+    align-items: end;
+}
+
+.bell {
+    justify-self: end;
+    font-size: 30px;
+}
+
+.announcement-text {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    border-bottom: 2px solid rgba(190, 190, 190, 0.5);
+    padding-bottom: 1rem;
+    font-size: 13px;
+}
+.announcement-text-end {
+    font-size: 13px;
+}
+
+#trending {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+
+}
+
+
+.trending-header {
+    margin: 0;
+}
+
+.trending-text {
+    align-content: center;
+    color: rgb(134, 134, 134);
+    font-size: 18px;
 }
