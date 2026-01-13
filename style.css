@@ -206,9 +206,11 @@ button {
     border-left: 6px solid var(--accent-color);
     padding: 1rem;
     display: grid;
-    
 }
 
+#announcement {
+    padding-bottom: 2rem;
+}
 
 .card-icons {
     display: grid;
